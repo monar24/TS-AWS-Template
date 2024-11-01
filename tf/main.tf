@@ -20,7 +20,7 @@ resource "aws_lambda_function" "create_lambdas" {
 
   filename         = "${path.cwd}/dist/index.zip"
   function_name    = "${var.function_name}"
-  role             = "arn:aws:iam::961171757719:role/service-role/export-execute-txn-role-9eweg0cc"
+  role             = "@@INSERT_ROLE@@"
   handler          = "index.handler"
   source_code_hash = "${data.archive_file.index_zip.output_base64sha256}"
   runtime          = "nodejs16.x"

@@ -1,7 +1,7 @@
 env = {
   region  = "us-east-1"
   profile = "default"
-  account_id = "961171757719"
+  account_id = "@@INSERT_ACCOUNT_ID@@"
 }
 
 sqs_queue_name = ""

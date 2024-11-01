@@ -1,12 +1,12 @@
 # Typescript AWS Template
 
 ## Setup
-1- configure aws locally: https://oneof.atlassian.net/wiki/spaces/OB/pages/457703425/AWS+Credentials+Configuration
-2- npm install -D @types/aws-lambda esbuild
+1- configure aws locally
+2- yarn install -D @types/aws-lambda esbuild
 
 ## Simple Run/Deploy Instructions through CLI
 
-1- npm run build
+1- yarn build
 
 2- aws lambda update-function-code --function-name <FUNCTION_NAME>  --zip-file "fileb://dist/index.zip"
 
