@@ -1,0 +1,27 @@
+{
+  "name": "typescript-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "esbuild index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js",
+    "postbuild": "cd dist && zip -r index.zip index.js*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneOf-Inc/Typescript-AWS-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneOf-Inc/Typescript-AWS-Template/issues"
+  },
+  "homepage": "https://github.com/OneOf-Inc/Typescript-AWS-Template#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "axios": "^1.2.1",
+    "esbuild": "^0.16.9"
+  }
+}
